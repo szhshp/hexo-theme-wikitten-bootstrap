@@ -13,7 +13,7 @@ Node 14
 ## 演示链接
 
 
-- [模板站点演示](https://note.szhshp.org)
+- [模板站点演示](https://hexo-theme-wikitten-bootstrap.vercel.app/)
 - [完整站点演示](https://note.szhshp.org)
 
 ## 定制化内容
