@@ -1,8 +1,6 @@
 # Hexo Configuration
-url: https://note.szhshp.org
-
+url: https://note.legacy.szhshp.org/
 permalink: :title/
-
 title: hexo-theme-wikitten-bootstrap
 keywords: szhshp, wiki, wikitten, bootstrap
 
@@ -45,7 +43,7 @@ theme: Wikitten
 nofollow:
   enable: true
   exclude:
-    - note.szhshp.org
+    - note.legacy.szhshp.org
 
 math:
   enable: true
@@ -54,8 +52,6 @@ math:
 # TOC will init when the password box disappeared.
 # Make sure password box ID not changed 
 encrypt: # hexo-blog-encrypt
-  tags:
-  - {name: Encrypted, password: 12345}
   theme: wave
   wrong_pass_message: Wrong password!
   wrong_hash_message: Wrong password!
