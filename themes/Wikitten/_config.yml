@@ -1,0 +1,63 @@
+# Menus
+menu:
+  首页: /
+  档案: /archives
+  标签: /tags
+  关于: /about
+
+## Markdown
+## https://github.com/hexojs/hexo-renderer-marked
+marked:
+  gfm: true
+  smartLists: true
+  autolink: true
+  modifyAnchors: 1
+  sanitizeUrl: true
+
+# Customize
+customize:
+    logo:
+        enabled: false
+        width: 40
+        height: 40
+        url: /css/images/logo.png
+    profile:
+        avatar: # css/images/avatar.png
+        gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+        author: 
+        author_title: 
+        location: 
+        follow: 
+    highlight: agate
+    sidebar: left # sidebar position, options: left, right
+    category_perExpand: false # enable article categories list per expanding
+    thumbnail: true # enable posts thumbnail, options: true, false
+    favicon: /css/images/favicon.ico # path to favicon
+    default_index_file: index.md # if this, it will display at site index instead of default index page
+
+# Widgets
+widgets: # default use category only
+    - category
+    
+# Excerpt 
+## Auto creat excerpt with not <!--more-->
+## Enable will truncate auto_excerpt.lines rows in post head to replace excerpt.
+auto_excerpt:
+    enable: true
+    lines: 10
+
+
+# History version 
+history_control: # make you wiki has history version control in page
+    enable: true
+    edit_link: https://github.dev # without slash in the tail
+    server_link: https://github.com
+    repository: hexo-theme-wikitten-bootstrap
+    user_name: szhshp
+    branch: master
+
+
+# Plugins
+plugins:
+    baidu_analytics: 1234512345 # enter Baidu Analytics hash key
+    mathjax: true

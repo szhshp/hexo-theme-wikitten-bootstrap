@@ -1,0 +1,4 @@
+<% if (post.date) { %>
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, null) %></time>
+<% } %>

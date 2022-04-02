@@ -1,0 +1,117 @@
+#header
+    @extend $block
+    background: white
+    position: relative
+    a, a:visited
+        white-space: nowrap
+        transition: 0.2s ease
+        color: color-white
+    a:hover
+        color: color-white
+        opacity: 0.6;
+
+$header-block
+    height: logo-height
+    line-height: logo-height
+    padding: ((header-height - logo-height)/2) 15px
+
+$header-block-left
+    float: left
+
+$header-block-right
+    float: right
+
+
+#logo
+    @extend $header-block
+    @extend $header-block-left
+    display: inline-block
+    .logo
+        margin-right: 5px
+        display: inline-block
+    .site-title
+        font-size: 20px
+        display: inline-block
+        vertical-align: top
+        font-weight: 600
+
+#header-title
+    text-align: center
+    height: logo-height
+    position: absolute
+    top: 50%
+    left: 0
+    margin-top: logo-height * -0.5
+
+$nav-link
+    float: left
+    display: block
+    padding: 0 15px
+
+span.navbar-toggler-icon 
+    height: 1rem;
+    width: 1rem;
+
+
+.nav-icon
+    @extend $nav-link
+    text-align: center
+    font-size: font-size
+    width: font-size
+    height: font-size
+    position: relative
+    cursor: pointer
+    height: logo-height !important
+    line-height: logo-height !important
+
+
+#sub-nav
+    @media mq-normal
+        display: none
+    @extend $header-block
+    @extend $header-block-right
+    #profile-nav
+        #profile-anchor
+            clearfix()
+            display: block
+            height: logo-height
+            line-height: logo-height
+        .avatar, .fa
+            float: left
+        .avatar
+            width: logo-height
+            height: logo-height
+            margin-right: 8px
+        .fa
+            line-height: logo-height
+
+#search-form-wrap
+    @media mq-mini
+        display: none
+    @extend $header-block
+    @extend $header-block-right
+    .search-form
+        position: relative
+        .search-form-input
+            width: 100%
+            padding: 0 30px 0 15px
+            line-height: logo-height
+            height: logo-height !important
+            border-radius: ((logo-height + 2)/2)
+            &::-webkit-search-results-decoration
+            &::-webkit-search-cancel-button
+                -webkit-appearance: none
+        .search-form-submit
+            top: 50%
+            right: 15px
+            border: none
+            cursor: pointer
+            margin-top: -7px
+            background: none
+            position: absolute
+            font: 13px font-icon
+            font-family: 'FontAwesome'
+            &:before
+                content: '\f002'
+            &:hover, &:focus
+                color: #777

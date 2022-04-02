@@ -1,0 +1,19 @@
+<% if (typeof(isHead) !== 'undefined' && isHead) { %>
+
+    <%- css('libs/bootstrap-4.4.1/css/bootstrap.min.css') %>
+    <%- css('libs/tocbot/tocbot.css') %>
+    <%- css('libs/bootstrap-table/bootstrap-table.min.css') %>
+
+    <% if (theme.plugins.baidu_analytics) { %>
+        <%- partial('plugin/baidu-analytics') %>
+    <% } %>
+    <% if (theme.plugins.mathjax) { %>
+        <%- partial('plugin/mathjax') %>
+    <% } %>
+<% } else { %>
+    <%- js('libs/tocbot/tocbot.min.js') %>
+    <%- js('libs/popper/popper.min.js') %>
+    <%- js('libs/bootstrap-4.4.1/js/bootstrap.min.js') %>
+    <%- js('libs/bootstrap-table/bootstrap-table.min.js') %>
+    <%- js('libs/clipboard/clipboard.min.js') %>
+<% } %>

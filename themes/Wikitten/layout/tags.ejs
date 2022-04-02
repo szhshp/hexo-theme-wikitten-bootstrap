@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="card w-100">
+            <div class="card-header p-2">
+                <%= __('index.tag') %>
+            </div>
+            <div class="card-body">
+                <% if(site.tags.length) { %>
+                    <%- list_tags(site.tags, { show_count: false, style: 'link' , class:'badge badge-secondary mr-1 ', 
+                        separator: '' 
+                    }) %>
+                <% } %>
+            </div>
+        </div>
+
+
+    </div>
+</div>

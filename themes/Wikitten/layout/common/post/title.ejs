@@ -1,0 +1,16 @@
+<% if (post.link) { %>
+    <span itemprop="name">
+        <a class="<%= class_name %>" href="<%- url_for(post.link) %>" target="_blank" itemprop="url"><%= post.title %></a>
+    </span>
+<% } else if (post.title) { %>
+    <% if (index) { %>
+        <span itemprop="name">
+            <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%= post.title %></a>
+        </span>
+    <% } else { %>
+        <!-- <i class="fa fa-file-text" aria-hidden="true"></i> -->
+        <span class="<%= class_name %>" itemprop="name">
+            <%= post.title %>
+        </span>
+    <% } %>
+<% } %>

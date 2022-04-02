@@ -1,0 +1,75 @@
+# Hexo Configuration
+url: https://note.szhshp.org
+
+permalink: :title/
+
+title: hexo-theme-wikitten-bootstrap
+keywords: szhshp, wiki, wikitten, bootstrap
+
+# Directory
+skip_render:
+  - README.md
+  - '_posts/**/embed_page/**'
+
+# Writing
+new_post_name: :title.md # File name of new posts
+
+post_asset_folder: true
+
+## Plugins: https://hexo.io/plugins/
+### JsonContent
+jsonContent:
+  meta: false
+  pages:
+    title: true
+    date: true
+    path: true
+    text: true
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    tags: true
+    categories: true
+  ignore:
+    - 404.html
+    
+### Creat sitemap
+sitemap:
+  path: sitemap.xml
+
+theme: Wikitten
+
+### Adds nofollow attribute to all external links in your hexo blog posts automatically.
+nofollow:
+  enable: true
+  exclude:
+    - note.szhshp.org
+
+math:
+  enable: true
+  engine: mathjax
+
+# TOC will init when the password box disappeared.
+# Make sure password box ID not changed 
+encrypt: # hexo-blog-encrypt
+  tags:
+  - {name: Encrypted, password: 12345}
+  theme: wave
+  wrong_pass_message: Wrong password!
+  wrong_hash_message: Wrong password!
+  abstract: ---
+  message: Password?
+  silent: true
+
+language: zh-CN
+
+per_page: 40
+
+# Github Access Token for deployment status
+# https://github.com/settings/tokens
+github_api:
+    accessToken: 1234512345
+    owner: szhshp
+    repo: szhshp-notebook

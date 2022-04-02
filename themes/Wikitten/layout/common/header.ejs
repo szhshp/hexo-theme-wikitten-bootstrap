@@ -1,0 +1,64 @@
+<header id="header">
+  <nav class="bg-secondary navbar navbar-dark navbar-expand-md px-lg-5 text-white w-100">
+    <span class="d-lg-block d-md-block d-none">
+      <%- (theme.customize.logo && theme.customize.logo.enabled ? '<i class="logo"></i>':'') %>
+      <a class="nav-link" href="/"><%= config.title %></a>
+    </span>
+    <button class="btn-sm m-1 navbar-toggler p-0 px-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <% for (var i in theme.menu) { %>
+        <li class="nav-item">
+          <a class="nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        </li>
+        <% } %>
+      </ul>
+      <div>
+        <i class=" fa-fw fa-1" id="status" aria-hidden="true" data-toggle="tooltip" title="asdasd"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+<script type="module">
+  import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+  const owner = "<%= config.github_api.owner %>";
+  const repo = "<%= config.github_api.repo %>";
+  (async function () {
+    const octokit = new Octokit({ auth: `<%= config.github_api.accessToken %>` });
+    const deployments = await octokit.request(
+      "GET /repos/{owner}/{repo}/deployments",
+      {
+        owner: owner,
+        repo: repo,
+      }
+    );
+    const deployment = await octokit.request(
+      "GET https://api.github.com/repos/{owner}/{repo}/deployments/{deployment_id}/statuses",
+      {
+        owner: owner,
+        repo: repo,
+        deployment_id: deployments.data[0].id,
+      }
+    );
+    let colorClass = "";
+    switch (deployment.data[0].state) {
+      case "success":
+        colorClass = "fa fa-check text-success";
+        break;
+      case "pending":
+        colorClass = "fa fa-circle-o-notch text-warning fa-spin";
+        break;
+      case "failed":
+        colorClass = "fa fa-circle text-danger";
+        break;
+      default:
+        break;
+    }
+    $("#status").addClass(colorClass);
+    $("#status").attr('title','Build Status - ' + deployment.data[0].state)
+    $('[data-toggle="tooltip"]').tooltip();
+  })();
+</script>

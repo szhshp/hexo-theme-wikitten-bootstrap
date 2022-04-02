@@ -1,0 +1,21 @@
+<%- partial('common/head') %>
+<body>
+    <div id="container" class="container-fluid p-0">
+        <%- partial('common/header') %>
+        <div class="outer m-1">
+            <div class="row">
+
+                <% if (theme.customize.sidebar) { %>
+                    <%- partial('common/sidebar') %>
+                <% } %>
+                
+                <section id="main" class="col-md-9 col-sm-12 mt-3">
+                    <%- body %>
+                </section>
+            </div>
+        </div>
+        <%- partial('common/footer', null, {cache: !config.relative_link}) %>
+        <%- partial('common/scripts') %>
+    </div>
+</body>
+</html>

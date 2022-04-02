@@ -1,0 +1,68 @@
+.timeline-wrap
+    margin: 40px 20px 40px 40px
+    border-left: 3px solid color-border
+    @media mq-mini
+        margin: 40px 20px 40px 30px
+    @media mq-mobile
+        margin: 40px 20px 40px 30px
+
+.timeline-row
+    clearfix()
+    margin: 10px 0
+    .node,
+    .title
+        float: left
+    .node
+        width: 6px
+        color: white
+        height: 6px
+        border-radius: 50%
+        margin: 6px 0 0 -5px
+        display: inline-block
+        background-color: color-border
+    .content
+        @extend $block
+        margin-left: 25px
+        position: relative
+        &:after,
+        &:before
+            content: ''
+            position: absolute
+            display: inline-block
+        &:after
+            top: 10px
+            left: -14px
+            border: 7px solid transparent
+            border-right-color: white
+        &:before
+            top: 9px
+            left: -16px
+            border: 8px solid transparent
+            border-right-color: rgba(0, 0, 0, 0.05)
+        h1,
+        .article-meta
+            padding: 0.2rem 0.5rem
+        h1
+            font-size: 16px
+            a
+                @extend $link-dark
+        .article-meta
+            font-size: 0.8rem
+            color: color-default + #333
+            border-top: 1px solid #f7f7f7
+            background-color: rgba(148, 148, 148, 0.2);
+
+.timeline-row-major
+    .node
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        margin: 12px 0 0 -5px
+        display: inline-block
+        background-color: color-border
+    .title
+        font-size: 18px
+        margin-left: 15px
+        line-height: 30px
+        a
+            @extend $link-dark
