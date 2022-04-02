@@ -1,6 +1,6 @@
 # Hexo-theme-Wikitten-Bootstrap
 
-> Fork 于 [zthxxx/hexo-theme-Wikitten](https://github.com/zthxxx/hexo-theme-Wikitten)
+> Forked from [zthxxx/hexo-theme-Wikitten](https://github.com/zthxxx/hexo-theme-Wikitten)
 >
 > Special Thanks to **zthxxx**
 
