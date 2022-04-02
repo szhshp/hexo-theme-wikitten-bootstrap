@@ -70,6 +70,11 @@ per_page: 40
 # Github Access Token for deployment status
 # https://github.com/settings/tokens
 github_api:
-    accessToken: 1234512345
-    owner: szhshp
-    repo: szhshp-notebook
+    accessToken: 
+    owner: 
+    repo: 
+
+deploy:
+  type: git
+  repo: https://github.com/szhshp/hexo-theme-wikitten-bootstrap
+  branch: master
