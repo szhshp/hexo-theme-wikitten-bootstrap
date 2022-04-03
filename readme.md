@@ -15,7 +15,7 @@ Node 14
 
 
 - [模板站点演示](https://hexo-theme-wikitten-bootstrap.vercel.app/)
-- [完整站点演示](https://note.szhshp.org)
+- [完整站点演示](https://note.legacy.szhshp.org)
 
 ## 基础功能
 
