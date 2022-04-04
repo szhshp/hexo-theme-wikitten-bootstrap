@@ -1,8 +1,11 @@
 # Hexo-theme-Wikitten-Bootstrap
 
-> Forked from [zthxxx/hexo-theme-Wikitten](https://github.com/zthxxx/hexo-theme-Wikitten)
+> Legacy project, archives only
+> 
+>  Forked from [zthxxx/hexo-theme-Wikitten](https://github.com/zthxxx/hexo-theme-Wikitten)
 >
 > Special Thanks to **zthxxx**
+
 
 
 
