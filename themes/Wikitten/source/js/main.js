@@ -124,5 +124,5 @@
   }, 3000);
   applyCategoryExpandEvent();
   attachSearchHotkey();
-  triggerSearchInHomepage();
+  //triggerSearchInHomepage();
 })(jQuery);
