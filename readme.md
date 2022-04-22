@@ -1,9 +1,7 @@
 # Hexo-theme-Wikitten-Bootstrap
 
  
-> Forked from [zthxxx/hexo-theme-Wikitten](https://github.com/zthxxx/hexo-theme-Wikitten)
->
-> Special Thanks to **zthxxx**
+
 
 
 ![image](https://user-images.githubusercontent.com/10084666/161426699-8332f124-9127-4e56-9f46-af58e9a3cb0e.png)
@@ -35,3 +33,10 @@ Node 14
 3. Simplified Configuration
 5. Float TOC
 6. Post Encryption
+
+
+## Reference
+
+> Forked from [zthxxx/hexo-theme-Wikitten](https://github.com/zthxxx/hexo-theme-Wikitten)
+>
+> Special Thanks to **zthxxx**
