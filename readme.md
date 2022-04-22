@@ -1,7 +1,6 @@
 # Hexo-theme-Wikitten-Bootstrap
 
-> 遗产项目, 此处仅归档.
-> 
+ 
 > Forked from [zthxxx/hexo-theme-Wikitten](https://github.com/zthxxx/hexo-theme-Wikitten)
 >
 > Special Thanks to **zthxxx**
@@ -24,7 +23,7 @@ Node 14
 ## 基础功能
 
 1. Markdown Rendering
-2. Multi-layer Folder Structure
+2. Folder Structure
 3. Tags & Categories
 4. Code Highlight
 5. [More Configurations](https://github.com/zthxxx/hexo-theme-Wikitten/blob/master/README_zh-CN.md)
@@ -33,6 +32,6 @@ Node 14
 
 1. UI Redesign 
 2. Bootstrap Table
-3. Simplied Configuration 
-5. Controlled + Float TOC
+3. Simplified Configuration
+5. Float TOC
 6. Post Encryption
