@@ -1,16 +1,8 @@
 <h1 align="center">Welcome to Hexo-theme-Wikitten-Bootstrap 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/node-14.x-blue.svg" />
-</p>
 
 > No more maintenance.
 >
 > Forked from [zthxxx/hexo-theme-Wikitten](https://github.com/zthxxx/hexo-theme-Wikitten)
-
-### 🏠 [Template Site](https://hexo-theme-wikitten-bootstrap.vercel.app/)
-
-### ✨ [Demo Site](https://note.legacy.szhshp.org)
 
 ![image](https://user-images.githubusercontent.com/10084666/161426699-8332f124-9127-4e56-9f46-af58e9a3cb0e.png)
 
